@@ -27,6 +27,17 @@ Turn your AI into a highly contextual storage manager!
 
 ---
 
+## 🧠 AI Agent Skills
+
+Unlike basic MCP servers that just dump raw data, this repository includes a dedicated [`/skills`](./skills) directory and a `SYSTEM_PROMPT.md`. These Markdown files teach your AI client **how** to use the tools effectively and safely.
+
+Available skills include:
+- 🛡️ **[Deletion Policy](./skills/deletion_policy.md):** Enforces a strict multi-step workflow before any files are deleted.
+- 🗑️ **[Safe Delete](./skills/safe_delete.md):** Defines exactly what is safe to delete (e.g., caches) and what should never be touched (e.g., system files).
+- 👨‍💻 **[Developer Cleanup](./skills/developer_cleanup.md):** Gives the AI deep knowledge of where dev tools (Docker, npm, pip) hide their massive cache files.
+
+---
+
 ## 🚀 Installation
 
 ### 1. Prerequisites
